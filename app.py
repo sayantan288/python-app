@@ -3,7 +3,7 @@ import sqlite3
 app = Flask(__name__)
 @app.route('/')
 def hello_world():
-    return 'Hello, Tails.com!'
+    return 'Hello, World!'
 @app.route('/wag/', methods=['POST'])
 def wag():
     command = request.form['command']
